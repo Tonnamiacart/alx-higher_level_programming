@@ -6,5 +6,5 @@ def new_in_list(my_list, idx, element):
         return replit
     if idx >= length:
         return length
-    copy[idx] = element
+    replit[idx] = element
     return replit
