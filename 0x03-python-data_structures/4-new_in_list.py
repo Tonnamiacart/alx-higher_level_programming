@@ -5,6 +5,6 @@ def new_in_list(my_list, idx, element):
     if idx <= -1:
         return replit
     if idx >= length:
-        return length
+        return replit
     replit[idx] = element
     return replit
