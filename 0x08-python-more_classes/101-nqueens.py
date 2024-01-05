@@ -75,28 +75,28 @@ def xout(board, row, col):
         if c >= len(board):
             break
         board[r][c] = "x"
-        c += 1
+        c = c + 1
     # X out all spots diagonally up to the left
     c = col - 1
     for r in range(row - 1, -1, -1):
         if c < 0:
             break
         board[r][c]
-        c -= 1
+        c = c - 1
     # X out all spots diagonally up to the right
     c = col + 1
     for r in range(row - 1, -1, -1):
         if c >= len(board):
             break
         board[r][c] = "x"
-        c += 1
+        c = c + 1
     # X out all spots diagonally down to the left
     c = col - 1
     for r in range(row + 1, len(board)):
         if c < 0:
             break
         board[r][c] = "x"
-        c -= 1
+        c = c - 1
 
 
 def recursive_solve(board, row, queens, solutions):
